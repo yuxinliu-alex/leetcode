@@ -7,11 +7,8 @@
 //
 
 #include <stdio.h>
-#include "Poj10.h"
+#include "Poj12.h"
 int main(int argc, const char * argv[]) {
-    if(isMatch("aab", "c*a*b")==true)
-        printf("true");
-    else
-        printf("false");
+    printf("%s dog",intToRoman(1888));
     return 0;
 }
