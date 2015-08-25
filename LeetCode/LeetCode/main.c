@@ -9,7 +9,9 @@
 #include <stdio.h>
 #include "Poj10.h"
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    if(isMatch("aab", "c*a*b")==true)
+        printf("true");
+    else
+        printf("false");
     return 0;
 }
