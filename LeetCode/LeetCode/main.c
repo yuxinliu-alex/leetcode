@@ -7,8 +7,8 @@
 //
 
 #include <stdio.h>
-#include "Poj12.h"
+#include "Poj13.h"
 int main(int argc, const char * argv[]) {
-    printf("%s dog",intToRoman(1888));
+    printf("%d",romanToInt("XC  IX"));
     return 0;
 }
