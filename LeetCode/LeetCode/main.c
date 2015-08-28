@@ -7,8 +7,10 @@
 //
 
 #include <stdio.h>
-#include "Poj13.h"
+#include "Poj15.h"
 int main(int argc, const char * argv[]) {
-    printf("%d",romanToInt("XC  IX"));
+    int s[]={-1,0,1,2,-1,-4};
+    int* p;
+    threeSum(s, 6, p);
     return 0;
 }
