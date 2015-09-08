@@ -7,16 +7,17 @@
 ////
 #include <stdio.h>
 #include <stdlib.h>
-#include "Poj17.h"
+#include "Poj18.h"
 int main(int argc, const char * argv[]) {
-    char s[]="7,3";
+    int s[]={1,0,-1,0,-2,2};
     int* l= (int*)malloc(sizeof(int));
     //printf("%d\n",(int)(sizeof(s)/sizeof(int)));
-    char ** a = letterCombinations(s, l);
+    int** a = fourSum(s, 6, 0, l);
     //printf("%c",**a);
+    printf("%d\n",*l);
     for (int i=0; i<*l; i++) {
-        for (int j=0; j<strlen(a[i]); j++) {
-            printf("%c",a[i][j]);
+        for (int j=0; j<4; j++) {
+            printf("%d",a[i][j]);
         }
         printf("\n");
     }
