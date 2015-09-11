@@ -7,19 +7,9 @@
 ////
 #include <stdio.h>
 #include <stdlib.h>
-#include "Poj18.h"
+#include "Poj20.h"
 int main(int argc, const char * argv[]) {
-    int s[]={1,0,-1,0,-2,2};
-    int* l= (int*)malloc(sizeof(int));
-    //printf("%d\n",(int)(sizeof(s)/sizeof(int)));
-    int** a = fourSum(s, 6, 0, l);
-    //printf("%c",**a);
-    printf("%d\n",*l);
-    for (int i=0; i<*l; i++) {
-        for (int j=0; j<4; j++) {
-            printf("%d",a[i][j]);
-        }
-        printf("\n");
-    }
+    char* s="()[]{}";
+    printf("%d",isValid(s));
     return 0;
 }
