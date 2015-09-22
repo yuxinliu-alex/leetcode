@@ -7,9 +7,18 @@
 ////
 #include <stdio.h>
 #include <stdlib.h>
-#include "Poj20.h"
+#include "Poj21.h"
 int main(int argc, const char * argv[]) {
-    char* s="()[]{}";
-    printf("%d",isValid(s));
+    ListNode l1={2,NULL};
+    ListNode l2={1,NULL};
+    //l1->val=2;
+    //l2->val=1;
+    ListNode* t1=&l1;
+    ListNode* t2=&l2;
+    ListNode* merger = mergeTwoLists(t1,t2);
+    while (merger!=NULL) {
+        printf("%d",merger->val);
+        merger=merger->next;
+    }
     return 0;
 }
